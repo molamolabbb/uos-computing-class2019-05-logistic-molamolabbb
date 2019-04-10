@@ -178,10 +178,16 @@ _[[https://medium.freecodecamp.org/an-illustrative-introduction-to-fishers-linea
   - Use =logistic_log_likelihood= and
     =logistic_log_likelihood_gradient= as =f= and =df= in the SGD
     minimiser
-- Check that your logistic regression function works on some simple
-  test cases
+- Check that your logistic regression function works on some test
+  cases
 - Run the logistic regression on the diabetes dataset from _[[https://www.kaggle.com/uciml/pima-indians-diabetes-database/version/1][kaggle]]_
-- Commit the code and push to github
+- Write an =accuracy(data, target, f)= function:
+  - =data= is a list of datapoints with known output list =target= (0 or 1)
+  - =f= takes in a datapoint, if =f(datapoint)>0.5=, the function is
+    correct if the target is 1, else incorrect and vice-versa for =<.5=
+  - =accuracy= returns the fraction of datapoints that =f= got correct
+- Write out the accuracy of your logistic regression fit in a file
+  =results.txt=, commit the code and file and push to github
 # - Implement multinomial logistic regression using SGD (?)
 
 ** Diabetes Dataset Information
